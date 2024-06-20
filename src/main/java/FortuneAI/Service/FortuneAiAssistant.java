@@ -11,6 +11,8 @@ import dev.langchain4j.model.input.Prompt;
 import dev.langchain4j.model.input.structured.StructuredPromptProcessor;
 import dev.langchain4j.model.openai.OpenAiChatModel;
 import dev.langchain4j.service.AiServices;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -19,6 +21,8 @@ import java.util.Scanner;
 
 import static java.util.Arrays.asList;
 
+@Service
+@Slf4j
 public class FortuneAiAssistant {
 
     public static ChatLanguageModel model = OpenAiChatModel.builder()
