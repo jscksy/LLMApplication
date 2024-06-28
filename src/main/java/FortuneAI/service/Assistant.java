@@ -1,4 +1,4 @@
-package FortuneAI.Service;
+package FortuneAI.service;
 
 import FortuneAI.prompt.Prompts;
 import FortuneAI.vo.CustInfo;
